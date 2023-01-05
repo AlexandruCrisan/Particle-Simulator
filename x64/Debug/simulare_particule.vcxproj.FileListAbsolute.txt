@@ -1,1 +1,2 @@
 A:\Programming\atestat\simulare_particule\x64\Debug\simulare_particule.exe
+C:\Programming\Atestat\sim_particule\x64\Debug\simulare_particule.exe

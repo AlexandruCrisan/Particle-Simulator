@@ -4,6 +4,9 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
+x64/Debug/opencv_world452d.dll
+*.tlog
+X64/Release/opencv_world452.dll
 *.rsuser
 *.suo
 *.user
