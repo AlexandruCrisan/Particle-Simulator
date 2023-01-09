@@ -44,6 +44,11 @@ void Manager::diplay_particles(std::vector<Particle> particles) {
 
 int Manager::prompt_ask_for_image(Image& image) {
 	std::vector<std::string> available_images = image.get_available_images();
+
+	if (!available_images.size()) {
+		return -1;
+	}
+
 	std::vector<int> colors(available_images.size(), 7);
 	colors[0] = 23;
 
@@ -79,6 +84,13 @@ int Manager::prompt_ask_for_image(Image& image) {
 void Manager::start() {
 	Image image;
 	int image_index = prompt_ask_for_image(image);
+
+	if (image_index == -1) {
+		set_color(31);
+		std::cout << "Make sure you add at least one image to the folder!";
+		std:getchar();
+		return;
+	}
 	
 	image.load_image(image_index);
 	std::vector<Particle> img_as_particles = image.transform_image_into_particles();
