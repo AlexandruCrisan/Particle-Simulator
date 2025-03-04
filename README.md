@@ -1,5 +1,5 @@
-# Particle Simulator 💥  
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green) ![Tailwdincss](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)  ![SpotifyAPI](https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white) ![GoogleAPIs](https://img.shields.io/badge/Google_APIs-4285F4?style=for-the-badge&logo=google&logoColor=white) ![Youtube](https://img.shields.io/badge/Youtube-FF0000)
+# Particle Simulator 💥📐✨
+![CPP](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white) ![SFML](https://img.shields.io/badge/SFML-44c718?logo=sfml&logoColor=white) ![SpotifyAPI](https://img.shields.io/badge/OpenCV-b5052b?logo=opencv) 
 
 **Particle Simulator** is a captivating simulation that demonstrates how particles interact under a gravitational field. The project allows users to choose from a set of images —or even upload their own— where each pixel is treated as a particle. When the left mouse button is pressed, a gravitational field is created around the cursor, attracting and disintegrating the image in a visually satisfying way.
 
