@@ -17,21 +17,17 @@ void Particle::draw(sf::RenderWindow& window) {
 	window.draw(this->shape);
 }
 
-void Particle::update2() {
-
-	//std::cout << velocity.x << " " << velocity.y << "\n";
-
-	
-}
-
 void Particle::update(Source& source, bool is_attracted) {
 	if (is_attracted) {
-		sf::Vector2f acceleration = source.get_position() - this->position;
+		// This is the distance in (x, y)
+		sf::Vector2f distance = source.get_position() - this->position;
 		
-		// Normalizam acceleratia
-		acceleration /= std::sqrt(acceleration.x * acceleration.x + acceleration.y * acceleration.y);
+		// Normalize the distance (divide by the hypothenuse, using Pythagorean theorem)
+		distance /= std::sqrt(distance.x * distance.x + distance.y * distance.y);
 		
-		this->velocity += acceleration * 0.5f;
+		sf::Vector2f acceleration = distance * source.get_power();
+
+		this->velocity += acceleration;
 		this->velocity -= this->FRICTION * this->velocity;
 	}
 	else {

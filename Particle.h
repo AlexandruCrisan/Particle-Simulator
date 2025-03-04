@@ -17,7 +17,6 @@ public:
 	void draw(sf::RenderWindow& window);
 	
 	void update(Source& source, bool is_attracted);
-	void update2();
 
 	// Getters & Setters
 

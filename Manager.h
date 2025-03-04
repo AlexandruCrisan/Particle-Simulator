@@ -13,10 +13,8 @@ private:
 	void navigate(int x, int y);
 	int prompt_ask_for_image(Image& image);
 	void diplay_particles(std::vector<Particle> particles);
-
 public:
 	void start();
-	
 };
 
 #endif

@@ -14,7 +14,7 @@ void Manager::navigate(int x, int y) {
 
 void Manager::diplay_particles(std::vector<Particle> particles) {
 	sf::RenderWindow window(sf::VideoMode(1600, 1000), "Aplicatie", sf::Style::Titlebar | sf::Style::Close);
-	Source source(sf::Vector2f(800, 500), 3500, sf::Color::Red, 10);
+	Source source(sf::Vector2f(800, 500), 1.5f, sf::Color::Red, 10);
 
 
 	while (window.isOpen()) {
@@ -70,7 +70,7 @@ int Manager::prompt_ask_for_image(Image& image) {
 		if (key == 72 && current_position > 1) {
 			current_position--;
 		}
-		if (key == 80 && current_position < 4) {
+		if (key == 80 && current_position < available_images.size()) {
 			current_position++;
 		}
 
